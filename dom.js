@@ -27,21 +27,17 @@ add[0].style.color = 'green';
 // }
 // items[2].style.backgroundColor = 'green';
 
-//for new list
-let list = document.getElementsByClassName('newlist');
-list[0].style.backgroundColor= 'orange';
-//GET ELEMENT BY TAG NAME
+let NthItem = document.querySelector('.list-group-item:nth-child(2)');
+NthItem.style.backgroundColor ='green';
 
-let li = document.getElementsByTagName('li');
-console.log(li);
-console.log(li[1]);
-li[1].textContent = 'Hello 2';
-li[1].style.fontWeight = 'bold';
-li[1].style.backgroundColor = 'yellow';
+let NthItem3 = document.querySelector('.list-group-item:nth-child(3)');
+NthItem3.style.visibility = 'hidden';
 
-for (let i = 0; i < li.length; i++) {
-    li[i].style.fontWeight = 'bold';
-    li[i].style.color = 'brown';
-    
+ let item1 = document.querySelectorAll('.list-group-item');
+ item1[1].style.color = 'green';
+
+let odd = document.querySelectorAll('li:nth-child(odd)');
+
+ for (let i = 0; i < odd.length; i++) {
+     odd[i].style.backgroundColor= 'green';
 }
-li[2].style.backgroundColor = 'green';
