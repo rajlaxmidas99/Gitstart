@@ -12,3 +12,18 @@ let add = document.getElementsByClassName('title');
 console.log(add[0]);
 add[0].style.fontWeight = 'bold';
 add[0].style.color = 'green';
+
+//GETELEMENT BY CLASSNAME
+let items = document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[1]);
+items[1].textContent = 'Hello 2';
+items[1].style.fontWeight = 'bold';
+items[1].style.backgroundColor = 'yellow';
+
+for (let i = 0; i < items.length; i++) {
+    items[i].style.fontWeight = 'bold';
+    items[i].style.color = 'brown';
+    
+}
+items[2].style.backgroundColor = 'green';
