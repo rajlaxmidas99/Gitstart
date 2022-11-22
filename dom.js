@@ -88,10 +88,17 @@ var h1 = document.querySelector('header h1');
 newDiv.style.fontSize='30px';
 container.insertBefore(newDiv, h1);
 console.log(newDiv);
+
+var newDiv1 = document.createElement('li');
+newDiv1.className = 'list-group-item';
+newDiv1.id='hello11';
+newDiv1.setAttribute('title','hello li');
+
+var newTextDiv1 = document.createTextNode('HEllo');
+newDiv1.appendChild(newTextDiv1);
+
 var list1 = document.querySelector('body .list-group');
-
 let li = document.querySelector('body li');
-
-list1.insertBefore(newDiv, li);
+list1.insertBefore(newDiv1, li);
 
 
