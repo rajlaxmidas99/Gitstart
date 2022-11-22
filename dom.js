@@ -41,3 +41,8 @@ let odd = document.querySelectorAll('li:nth-child(odd)');
  for (let i = 0; i < odd.length; i++) {
      odd[i].style.backgroundColor= 'green';
 }
+
+let even = document.querySelectorAll('li:nth-child(even)');
+for (let i = 0; i < even.length; i++) {
+    even[i].style.backgroundColor= 'yellow';
+}
